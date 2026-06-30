@@ -16,6 +16,9 @@
 			mini-icons
 			cord-nvim
 			lualine-nvim
+			catppuccin-nvim
+			noice-nvim
+			nvim-autopairs
 		];
 	};
 

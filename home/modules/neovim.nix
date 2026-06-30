@@ -15,6 +15,7 @@
 			oil-nvim
 			mini-icons
 			cord-nvim
+			lualine-nvim
 		];
 	};
 

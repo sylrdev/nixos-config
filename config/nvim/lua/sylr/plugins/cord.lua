@@ -4,5 +4,8 @@ require("cord").setup {
 	},
 	display = {
 		theme = "atom",
+	},
+	idle = {
+		enabled = false
 	}
 }

@@ -19,6 +19,7 @@
 			catppuccin-nvim
 			noice-nvim
 			nvim-autopairs
+			gitsigns-nvim
 		];
 	};
 

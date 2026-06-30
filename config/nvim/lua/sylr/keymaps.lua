@@ -10,4 +10,4 @@ setkeymap("n", "<leader>qq", cmd.qa)
 setkeymap("n", "<esc>", cmd.nohlsearch)
 setkeymap("i", "jj", "<esc>")
 
-setkeymap("n", "<leader>e", ":Oil<CR>")
+setkeymap("n", "<leader>e", ":Oil<CR>", { silent = true })

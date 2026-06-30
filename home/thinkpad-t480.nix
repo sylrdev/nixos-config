@@ -27,7 +27,7 @@
 	];
 
 	programs.zsh.shellAliases = {
-		no-r = "sudo nixos-rebuild switch --flake .#thinkpad-t480";
+		nor = "sudo nixos-rebuild switch --flake .#thinkpad-t480";
 	};
 
 	home.stateVersion = "26.05";

@@ -20,6 +20,7 @@
 			noice-nvim
 			nvim-autopairs
 			gitsigns-nvim
+			conform-nvim
 		];
 	};
 
@@ -28,6 +29,7 @@
 		lua5_1
 		fd
 		ripgrep
+		stylua
 	];
 
 	xdg.configFile."nvim".source = ./../../config/nvim;

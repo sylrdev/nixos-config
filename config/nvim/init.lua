@@ -1,8 +1,9 @@
-require('options')
-require('keymaps')
+require("options")
+require("keymaps")
 
 require("plugins.oil")
 require("plugins.cord")
 require("plugins.telescope")
 require("plugins.catppuccin")
 require("plugins.gitsigns")
+require("plugins.conform")

@@ -18,12 +18,14 @@
 			telescope-fzf-native-nvim
 			catppuccin-nvim
 			gitsigns-nvim
+			conform-nvim
 		];
 	};
 
 	home.packages = with pkgs; [
 		ripgrep
 		fd
+		stylua
 	];
 
 	xdg.configFile."nvim".source = ./../../config/nvim;

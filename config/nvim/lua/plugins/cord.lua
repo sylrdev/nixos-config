@@ -1,11 +1,11 @@
-require("cord").setup{
+require("cord").setup {
 	editor = {
-		tooltip = "Neovim 0.12.3 on NixOS"
+		tooltip = "Neovim 0.12.3 on NixOS",
 	},
 	display = {
-		theme = "atom"
+		theme = "atom",
 	},
 	idle = {
-		enabled = false
-	}
+		enabled = false,
+	},
 }

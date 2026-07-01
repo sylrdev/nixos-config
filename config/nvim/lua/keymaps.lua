@@ -2,8 +2,8 @@ local setkeymap = vim.keymap.set
 local cmd = vim.cmd
 
 -- setting leader
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- setting basic keymaps
 setkeymap("n", "<leader>q", cmd.q)

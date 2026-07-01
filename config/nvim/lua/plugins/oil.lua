@@ -1,6 +1,6 @@
 require("plugins.mini-icons")
 require("plugins.web-devicons")
 
-require('oil').setup()
+require("oil").setup()
 
-vim.keymap.set('n', "<leader>e", ":Oil<CR>", {silent=true})
+vim.keymap.set("n", "<leader>e", ":Oil<CR>", { silent = true })

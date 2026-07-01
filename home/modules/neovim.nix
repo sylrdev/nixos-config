@@ -24,6 +24,8 @@
       trouble-nvim
       lualine-nvim
       nvim-lspconfig
+      blink-cmp
+      lazydev-nvim
     ];
   };
 

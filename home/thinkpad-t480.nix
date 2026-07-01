@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, zen-browser, ... }:
 
 {
 	home.username = "sylr";
@@ -8,7 +8,6 @@
 		# programs
 		librewolf
 		vesktop
-		firefox
 
 		# cli scripts
 		fastfetch

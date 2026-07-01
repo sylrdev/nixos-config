@@ -1,1 +1,2 @@
-require("sylr")
+require('options')
+require('keymaps')

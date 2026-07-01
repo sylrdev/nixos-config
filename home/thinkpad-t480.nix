@@ -1,4 +1,12 @@
 { pkgs, ... }:
+let
+  rokitSrc = pkgs.fetchFromGitHub {
+    owner = "rojo-rbx";
+    repo = "rokit";
+    rev = "main";
+    sha256 = "sha256-q2TleXyZOv10MYXYvSTB6ssxlVZZnFeGWrIDOJYnxyU=";
+  };
+in
 {
   home.username = "sylr";
   home.homeDirectory = "/home/sylr";
@@ -21,21 +29,9 @@
       pname = "rokit";
       version = "latest";
 
-      src = pkgs.fetchFromGitHub {
-        owner = "rojo-rbx";
-        repo = "rokit";
-        rev = "main";
-        sha256 = "sha256-q2TleXyZOv10MYXYvSTB6ssxlVZZnFeGWrIDOJYnxyU=";
-      };
+      src = rokitSrc;
 
-      cargoLock.lockFile =
-        pkgs.fetchFromGitHub {
-          owner = "rojo-rbx";
-          repo = "rokit";
-          rev = "main";
-          sha256 = "sha256-q2TleXyZOv10MYXYvSTB6ssxlVZZnFeGWrIDOJYnxyU=";
-        }
-        + "/Cargo.lock";
+      cargoLock.lockFile = rokitSrc + "/Cargo.lock";
     })
   ];
 

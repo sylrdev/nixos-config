@@ -17,6 +17,7 @@
 			plenary-nvim
 			telescope-fzf-native-nvim
 			catppuccin-nvim
+			gitsigns-nvim
 		];
 	};
 

@@ -13,10 +13,15 @@
 			mini-icons
 			nvim-web-devicons
 			cord-nvim
+			telescope-nvim
+			plenary-nvim
+			telescope-fzf-native-nvim
 		];
 	};
 
 	home.packages = with pkgs; [
+		ripgrep
+		fd
 	];
 
 	xdg.configFile."nvim".source = ./../../config/nvim;

@@ -8,6 +8,7 @@
 		# programs
 		librewolf
 		vesktop
+		firefox
 
 		# cli scripts
 		fastfetch

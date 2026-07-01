@@ -9,6 +9,9 @@
 		defaultEditor = true;
 
 		plugins = with pkgs.vimPlugins; [
+			oil-nvim
+			mini-icons
+			nvim-web-devicons
 		];
 	};
 

@@ -22,6 +22,7 @@
       nvim-autopairs
       noice-nvim
       trouble-nvim
+      lualine-nvim
     ];
   };
 

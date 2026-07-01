@@ -26,6 +26,7 @@
       nvim-lspconfig
       blink-cmp
       lazydev-nvim
+      luau-lsp-nvim
     ];
   };
 
@@ -35,6 +36,8 @@
     stylua
     nixfmt
     lua-language-server
+    nixd
+    luau-lsp
   ];
 
   xdg.configFile."nvim".source = ./../../config/nvim;

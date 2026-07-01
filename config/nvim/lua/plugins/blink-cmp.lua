@@ -5,7 +5,7 @@ require("blink.cmp").setup {
 		preset = "default",
 		["<return>"] = { "accept", "fallback" },
 		["<tab>"] = { "select_next", "fallback" },
-		["<C-tab>"] = { "select_prev", "fallback" },
+		["\\"] = { "select_prev", "fallback" },
 	},
 	sources = {
 		default = { "lsp", "path", "snippets", "buffer", "lazydev" },

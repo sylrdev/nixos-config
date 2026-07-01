@@ -12,6 +12,7 @@
 			oil-nvim
 			mini-icons
 			nvim-web-devicons
+			cord-nvim
 		];
 	};
 

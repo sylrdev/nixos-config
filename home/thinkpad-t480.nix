@@ -24,6 +24,7 @@ in
     yazi
     lazygit
     tmux
+    vinegar
 
     (rustPlatform.buildRustPackage {
       pname = "rokit";
@@ -41,6 +42,13 @@ in
     ./modules/ghostty.nix
     ./modules/git.nix
   ];
+
+  services.flatpak = {
+    enable = true;
+    packages = [
+      "org.vinegarhq.Sober"
+    ];
+  };
 
   home.stateVersion = "26.05";
 

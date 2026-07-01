@@ -66,6 +66,9 @@
   # Enable ld
   programs.nix-ld.enable = true;
 
+  # Enable flatpaks
+  services.flatpak.enable = true;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users."sylr" = {
     isNormalUser = true;

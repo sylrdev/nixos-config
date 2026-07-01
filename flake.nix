@@ -8,6 +8,11 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nix-flatpak = {
+      url = "github:gmodena/nix-flatpak";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -15,6 +20,7 @@
       self,
       nixpkgs,
       home-manager,
+      nix-flatpak,
       ...
     }:
     let
@@ -33,8 +39,14 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
 
-            home-manager.users.sylr = import ./home/thinkpad-t480.nix;
+            home-manager.users.sylr = {
+              imports = [
+                nix-flatpak.homeManagerModules.nix-flatpak
+                ./home/thinkpad-t480.nix
+              ];
+            };
           }
+
         ];
       };
     };

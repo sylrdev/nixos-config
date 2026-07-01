@@ -9,3 +9,4 @@ vim.g.maplocalleader = " "
 setkeymap("n", "<leader>q", cmd.q)
 setkeymap("n", "<leader>Q", cmd.qa)
 setkeymap("n", "<leader>w", cmd.w)
+setkeymap("n", "<esc>", cmd.nohlsearch)

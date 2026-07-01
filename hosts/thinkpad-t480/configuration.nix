@@ -63,6 +63,9 @@
   # Enable zsh
   programs.zsh.enable = true;
 
+  # Enable ld
+  programs.nix-ld.enable = true;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users."sylr" = {
     isNormalUser = true;

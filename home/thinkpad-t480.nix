@@ -1,5 +1,4 @@
 { pkgs, ... }:
-
 {
   home.username = "sylr";
   home.homeDirectory = "/home/sylr";
@@ -17,6 +16,27 @@
     yazi
     lazygit
     tmux
+
+    (rustPlatform.buildRustPackage {
+      pname = "rokit";
+      version = "latest";
+
+      src = pkgs.fetchFromGitHub {
+        owner = "rojo-rbx";
+        repo = "rokit";
+        rev = "main";
+        sha256 = "sha256-q2TleXyZOv10MYXYvSTB6ssxlVZZnFeGWrIDOJYnxyU=";
+      };
+
+      cargoLock.lockFile =
+        pkgs.fetchFromGitHub {
+          owner = "rojo-rbx";
+          repo = "rokit";
+          rev = "main";
+          sha256 = "sha256-q2TleXyZOv10MYXYvSTB6ssxlVZZnFeGWrIDOJYnxyU=";
+        }
+        + "/Cargo.lock";
+    })
   ];
 
   imports = [
@@ -25,12 +45,6 @@
     ./modules/ghostty.nix
     ./modules/git.nix
   ];
-
-  programs.zsh.shellAliases = {
-    nor = "sudo nixos-rebuild switch --flake .#thinkpad-t480";
-    nor-test = "sudo nixos-rebuild test --flake .#thinkpad-t480";
-    ff = "fastfetch";
-  };
 
   home.stateVersion = "26.05";
 

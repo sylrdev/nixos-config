@@ -21,6 +21,7 @@
       conform-nvim
       nvim-autopairs
       noice-nvim
+      trouble-nvim
     ];
   };
 

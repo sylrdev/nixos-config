@@ -20,6 +20,7 @@
       gitsigns-nvim
       conform-nvim
       nvim-autopairs
+      noice-nvim
     ];
   };
 

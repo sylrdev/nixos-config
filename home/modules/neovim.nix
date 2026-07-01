@@ -23,6 +23,7 @@
       noice-nvim
       trouble-nvim
       lualine-nvim
+      nvim-lspconfig
     ];
   };
 
@@ -31,6 +32,7 @@
     fd
     stylua
     nixfmt
+    lua-language-server
   ];
 
   xdg.configFile."nvim".source = ./../../config/nvim;

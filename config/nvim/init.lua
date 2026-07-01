@@ -1,5 +1,6 @@
 require("options")
 require("keymaps")
+require("language-servers")
 
 require("plugins.oil")
 require("plugins.cord")
